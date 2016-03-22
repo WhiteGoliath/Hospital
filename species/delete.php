@@ -2,17 +2,17 @@
 	require_once "delete.logic.php";
 	include "../common/header.php";
 ?>
-	<h1>Delete client</h1>
+	<h1>Delete species</h1>
 	<p>Are you sure you want to delete:</p>
 	<form method="post">
 		<div>
-			<input type="hidden" name="id" value="<?=$client['id']?>">
+			<input type="hidden" name="id" value="<?=$species['id']?>">
 			<label for="name">Name:</label>
-			<span><?=$client['name']?></span>
+			<span><?=$species['name']?></span>
 		</div>
 		<div>
 			<label for="name">Species:</label>
-			<span><?=$client['species']?></span>
+			<span><?=$species['species']?></span>
 		</div>
 		<div>
 			<label></label>

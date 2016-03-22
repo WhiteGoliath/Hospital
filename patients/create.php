@@ -13,7 +13,7 @@
 			<input type="text" id="species" name="species">
 		</div>
 		<div>
-			<label for="name">Species:</label>
+			<label for="name">Beschrijving:</label>
 			<textarea id="status" name="status"></textarea>
 		</div>
 		<div>

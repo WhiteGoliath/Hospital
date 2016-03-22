@@ -1,21 +1,20 @@
 <?php
-	require_once "edit.logic.php";
+	require_once "create.logic.php";
 	include "../common/header.php";
 ?>
-	<h1>Edit client</h1>
+	<h1>New patiënt</h1>
 	<form method="post">
 		<div>
-			<input type="hidden" name="id" value="<?=$client['id']?>">
 			<label for="name">Name:</label>
-			<input type="text" id="name" name="name" value="<?=$client['name']?>">
+			<input type="text" id="name" name="name">
 		</div>
 		<div>
 			<label for="name">Species:</label>
-			<input type="text" id="species" name="species" value="<?=$client['species']?>">
+			<input type="text" id="species" name="species">
 		</div>
 		<div>
 			<label for="name">Beschrijving:</label>
-			<textarea id="status" name="status"><?=$client['status']?></textarea>
+			<textarea id="status" name="status"></textarea>
 		</div>
 		<div>
 			<label></label>

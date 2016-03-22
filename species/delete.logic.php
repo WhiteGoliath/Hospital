@@ -1,18 +1,18 @@
 <?php
 	if ($_SERVER["REQUEST_METHOD"] == "GET"):
-		$client = NULL;
+		$species = NULL;
 		if (isset($_GET['id'])):
-			// Get client for id
+			// Get species for id
 			$db = new mysqli('localhost','root','','hospital');
 			$id = $db->escape_string($_GET["id"]);
 			
-			$query = "select * from client where id=$id";
+			$query = "select * from species where id=$id";
 			$result = $db->query($query);
 		
-			$client = $result->fetch_assoc();		
+			$species = $result->fetch_assoc();		
 		endif;
-		if ($client == NULL):
-			// No client found
+		if ($species == NULL):
+			// No species found
 			http_response_code(404);
 			include("../common/not_found.php");
 			exit();
@@ -25,7 +25,7 @@
 			$id = $db->escape_string($_POST["id"]);
 	
 			// Prepare query and execute
-			$query = "delete from client where id=$id";
+			$query = "delete from species where id=$id";
 			$result = $db->query($query);
 		endif;
 		
