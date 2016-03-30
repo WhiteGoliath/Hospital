@@ -14,7 +14,7 @@
 			<input type="text" id="species" name="species" value="<?=$client['species']?>">
 		</div>
 		<div>
-			<label for="name">Beschrijving:</label>
+			<label for="name">Status:</label>
 			<textarea id="status" name="status"><?=$client['status']?></textarea>
 		</div>
 		<div>

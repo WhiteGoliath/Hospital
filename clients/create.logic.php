@@ -5,7 +5,6 @@
 		// Prepare data for insertion
 		$name = $db->escape_string($_POST["name"]);
 		$species = $db->escape_string($_POST["species"]);
-		$gender = $db->escape_string($_POST["gender"]);
 		$status = $db->escape_string($_POST["status"]);
 		
 		// Prepare query and execute
@@ -17,4 +16,4 @@
     exit();
 	endif;
 
-?>
+?>		

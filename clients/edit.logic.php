@@ -29,7 +29,6 @@
 		// Prepare query and execute
 		$query = "update client set name='$name', species='$species', status='$status' where id=$id";
 		$result = $db->query($query);
-	
     // Tell the browser to go back to the index page.
     header("Location: ./");
     exit();

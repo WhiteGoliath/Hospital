@@ -10,6 +10,11 @@
 			<input type="text" id="name" name="name" value="<?=$patient['name']?>">
 		</div>
 		<div>
+			<label for="name">Gender</label>
+			<input type="radio" id="gender" name="gender" value="male">Male
+			<input type="radio" id="gender" name="gender" value="female">Female
+		</div>
+		<div>
 			<label for="name">Species:</label>
 			<input type="text" id="species" name="species" value="<?=$patient['species']?>">
 		</div>

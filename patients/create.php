@@ -9,6 +9,11 @@
 			<input type="text" id="name" name="name">
 		</div>
 		<div>
+			<label for="name">Gender:</label>
+			<input type="radio" id="gender" name="gender" value="male">Male
+			<input type="radio" id="gender" name="gender" value="female">Female
+		</div>
+		<div>
 			<label for="name">Species:</label>
 			<input type="text" id="species" name="species">
 		</div>

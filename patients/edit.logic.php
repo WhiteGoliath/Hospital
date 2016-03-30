@@ -23,15 +23,16 @@
 		// Prepare data for update
 		$id = $db->escape_string($_POST["id"]);
 		$name = $db->escape_string($_POST["name"]);
+		$gender = $db->escape_string($_POST["gender"]);
 		$species = $db->escape_string($_POST["species"]);
 		$status = $db->escape_string($_POST["status"]);
 		
 		// Prepare query and execute
-		$query = "update patient set name='$name', species='$species', status='$status' where id=$id";
+		$query = "update patient set name='$name', gender='$gender', species='$species', status='$status' where id='$id'";
 		$result = $db->query($query);
-	
+		
     // Tell the browser to go back to the index page.
-    header("Location: ./");
+   header("Location: ./");
     exit();
 	endif;
 

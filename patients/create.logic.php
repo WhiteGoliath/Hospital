@@ -4,11 +4,12 @@
 		
 		// Prepare data for insertion
 		$name = $db->escape_string($_POST["name"]);
+		$gender = $db->escape_string($_POST["gender"]);
 		$species = $db->escape_string($_POST["species"]);
 		$status = $db->escape_string($_POST["status"]);
 		
 		// Prepare query and execute
-		$query = "insert into patient (name, species, status) values ('$name','$species','$status')";
+		$query = "insert into patient (name, gender, species, status) values ('$name','$gender','$species','$status')";
 		$result = $db->query($query);
 	
     // Tell the browser to go back to the index page.

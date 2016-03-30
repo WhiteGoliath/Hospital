@@ -9,6 +9,7 @@
 			<tr>
 				<th>Name</th>
 				<th>Species</th>
+				<th>gender</th>
 				<th>Status</th>
 				<th></th>
 				<th></th>
