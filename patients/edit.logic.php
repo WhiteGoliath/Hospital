@@ -6,7 +6,12 @@
 			$db = new mysqli('localhost','root','','hospital');
 			$id = $db->escape_string($_GET["id"]);
 			
-			$query = "select * from patient where id=$id";
+			$query = "select * from patient 
+			inner join species
+			on patient.species_id=species.id
+			inner join client
+			on patient.client_id=client.id
+			where patient.id=$id";
 			$result = $db->query($query);
 		
 			$patient = $result->fetch_assoc();		

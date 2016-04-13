@@ -8,8 +8,8 @@
 		<thead>
 			<tr>
 				<th>Name</th>
-				<th>Species</th>
-				<th>status</th>
+				<th></th>
+				<th></th>
 				<th></th>
 			</tr>
 		</thead>
@@ -18,9 +18,7 @@
 	foreach($clients as $client):
 ?>
 			<tr>
-				<td><?=$client['name']?></td>
-				<td><?=$client['species']?></td>
-				<td><?=$client['status']?></td>
+				<td><?=$client['firstname']?></td>
 				<td class="center"><a href="edit.php?id=<?=$client['id']?>">edit</a></td>
 				<td class="center"><a href="delete.php?id=<?=$client['id']?>">delete</a></td>
 			</tr>

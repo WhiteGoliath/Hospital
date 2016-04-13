@@ -10,7 +10,7 @@
 			<input type="text" id="name" name="name" value="<?=$patient['name']?>">
 		</div>
 		<div>
-			<label for="name">Gender</label>
+			<label for="name">Gender:</label>
 			<input type="radio" id="gender" name="gender" value="male">Male
 			<input type="radio" id="gender" name="gender" value="female">Female
 		</div>

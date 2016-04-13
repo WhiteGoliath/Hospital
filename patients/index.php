@@ -7,11 +7,11 @@
 	<table>
 		<thead>
 			<tr>
-				<th>Name</th>
+				<th><a href="http://localhost/php/hospital/patients/index.php?sort1=patient.name">Name</a></th>
 				<th>Species</th>
 				<th>gender</th>
-				<th>Status</th>
-				<th></th>
+				<th><a href="http://localhost/php/hospital/patients/index.php?sort1=patient.status">Status</a></th>
+				<th>firstname</th>
 				<th></th>
 			</tr>
 		</thead>
@@ -24,6 +24,7 @@
 				<td><?=$patient['species']?></td>
 				<td><?=$patient['gender']?></td>
 				<td><?=$patient['status']?></td>
+				<td><?=$patient['firstname']?></td>
 				<td class="center"><a href="edit.php?id=<?=$patient['id']?>">edit</a></td>
 				<td class="center"><a href="delete.php?id=<?=$patient['id']?>">delete</a></td>
 			</tr>

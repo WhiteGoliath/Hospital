@@ -8,8 +8,6 @@
 		<thead>
 			<tr>
 				<th>Name</th>
-				<th>Species</th>
-				<th>Status</th>
 				<th></th>
 				<th></th>
 			</tr>
@@ -19,9 +17,7 @@
 	foreach($species as $specie):
 ?>
 			<tr>
-				<td><?=$specie['name']?></td>
 				<td><?=$specie['species']?></td>
-				<td><?=$specie['status']?></td>
 				<td class="center"><a href="edit.php?id=<?=$specie['id']?>">edit</a></td>
 				<td class="center"><a href="delete.php?id=<?=$specie['id']?>">delete</a></td>
 			</tr>
