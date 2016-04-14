@@ -23,11 +23,9 @@
 		// Prepare data for update
 		$id = $db->escape_string($_POST["id"]);
 		$name = $db->escape_string($_POST["name"]);
-		$species = $db->escape_string($_POST["species"]);
-		$status = $db->escape_string($_POST["status"]);
 		
 		// Prepare query and execute
-		$query = "update client set name='$name', species='$species', status='$status' where id=$id";
+		$query = "update client set firstname='$name' where id=$id";
 		$result = $db->query($query);
     // Tell the browser to go back to the index page.
     header("Location: ./");

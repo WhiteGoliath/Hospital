@@ -4,6 +4,7 @@
 ?>
 	<h1>Edit species</h1>
 	<form method="post">
+		<input type="hidden" name="id" value="<?=$species['id']?>">
 		<div>
 			<label for="name">Species:</label>
 			<input type="text" id="species" name="species" value="<?=$species['species']?>">

@@ -5,12 +5,13 @@
 	<h1>Patiënts</h1>
 	<p class="options"><a href="create.php">create</a></p>
 	<table>
+		<!-- echo de order op 2 manieren, de lange en de krot ( <?=$order?>  )-->
 		<thead>
 			<tr>
-				<th><a href="http://localhost/php/hospital/patients/index.php?sort1=patient.name">Name</a></th>
+				<th><a href="index.php?column=patient.name&sort=<?php echo $order; ?>">Name</a></th> 
 				<th>Species</th>
 				<th>gender</th>
-				<th><a href="http://localhost/php/hospital/patients/index.php?sort1=patient.status">Status</a></th>
+				<th><a href="">Status</a></th>
 				<th>firstname</th>
 				<th></th>
 			</tr>

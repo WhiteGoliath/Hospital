@@ -8,11 +8,7 @@
 		<div>
 			<input type="hidden" name="id" value="<?=$client['id']?>">
 			<label for="name">Name:</label>
-			<span><?=$client['name']?></span>
-		</div>
-		<div>
-			<label for="name">Species:</label>
-			<span><?=$client['species']?></span>
+			<span><?=$client['firstname']?></span>
 		</div>
 		<div>
 			<label></label>

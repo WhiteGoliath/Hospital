@@ -1,5 +1,5 @@
 <?php
-	if ($_SERVER["REQUEST_METHOD"] == "POST"):
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$db = new mysqli('localhost','root','','hospital');
 		
 		// Prepare data for insertion
@@ -12,9 +12,14 @@
 		$query = "insert into patient (name, gender, species, status) values ('$name','$gender','$species','$status')";
 		$result = $db->query($query);
 	
-    // Tell the browser to go back to the index page.
-    header("Location: ./");
-    exit();
-	endif;
+	    // Tell the browser to go back to the index page.
+	    header("Location: ./");
+	    exit();
+	} elseif ($_SERVER["REQUEST_METHOD"] == "GET") {
+		
+		//uitlezen species tabel, plaatsen in $species
+
+		//uitlezen client tabel, plaatsen in $clients
+	}
 
 ?>

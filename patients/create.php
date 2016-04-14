@@ -13,14 +13,32 @@
 			<input type="radio" id="gender" name="gender" value="male">Male
 			<input type="radio" id="gender" name="gender" value="female">Female
 		</div>
+		
 		<div>
 			<label for="name">Species:</label>
-			<input type="text" id="species" name="species">
+			<select name="species" id="species">
+
+				<option value="1">Kat</option>
+				<option value="2" selected="true">Hond</option>
+
+			</select>
 		</div>
+		
 		<div>
 			<label for="name">Beschrijving:</label>
 			<textarea id="status" name="status"></textarea>
 		</div>
+
+		<div>
+			<label for="client">Client:</label>
+			<select name="client" id="client">
+				
+				<option value="1">Marc</option>
+				<option value="2">Maarten</option>
+
+			</select>
+		</div>
+
 		<div>
 			<label></label>
 			<input type="submit" value="Save">

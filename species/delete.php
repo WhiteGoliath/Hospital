@@ -5,11 +5,8 @@
 	<h1>Delete species</h1>
 	<p>Are you sure you want to delete:</p>
 	<form method="post">
-		<div>
-			<input type="hidden" name="id" value="<?=$species['id']?>">
-			<label for="name">Name:</label>
-			<span><?=$species['name']?></span>
-		</div>
+		<input type="hidden" name="id" value="<?=$species['id']?>">
+
 		<div>
 			<label for="name">Species:</label>
 			<span><?=$species['species']?></span>
