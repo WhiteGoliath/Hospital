@@ -16,7 +16,7 @@
 				<th></th>
 			</tr>
 		</thead>
-		</tbody>
+		<tbody>
 <?php
 	foreach($patients as $patient):
 ?>

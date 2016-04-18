@@ -16,13 +16,15 @@
 	}
 
 
-	$query = "select * from patient
+	$query = "select patient.*, species.species, client.firstname from patient
 	inner join species
 	on patient.species_id=species.id
 	inner join client
 	on patient.client_id=client.id
  	 ".$sort;
+
 	$result = $db->query($query);
 	
 	$patients = $result->fetch_all(MYSQLI_ASSOC);
+	var_dump($patients);
 ?>

@@ -6,20 +6,20 @@
 			$db = new mysqli('localhost','root','','hospital');
 			$id = $db->escape_string($_GET["id"]);
 			
-			$query = "select * from patient 
+			$query = "select patient.*, species.species, client.firstname from patient
 			inner join species
 			on patient.species_id=species.id
 			inner join client
 			on patient.client_id=client.id
 			where patient.id=$id";
 			$result = $db->query($query);
-		
+			
 			$patient = $result->fetch_assoc();		
 		endif;
 		if ($patient == NULL):
 			// No patient found
-			http_response_code(404);
-			include("../common/not_found.php");
+			//http_response_code(404);
+			//include("../common/not_found.php");
 			exit();
 		endif;
 	elseif ($_SERVER["REQUEST_METHOD"] == "POST"):
