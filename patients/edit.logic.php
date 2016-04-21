@@ -18,8 +18,8 @@
 		endif;
 		if ($patient == NULL):
 			// No patient found
-			//http_response_code(404);
-			//include("../common/not_found.php");
+			http_response_code(404);
+			include("../common/not_found.php");
 			exit();
 		endif;
 	elseif ($_SERVER["REQUEST_METHOD"] == "POST"):
