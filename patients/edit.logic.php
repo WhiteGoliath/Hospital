@@ -6,15 +6,27 @@
 			$db = new mysqli('localhost','root','','hospital');
 			$id = $db->escape_string($_GET["id"]);
 			
+			//--------------------------------
+
 			$query = "select patient.*, species.species, client.firstname from patient
 			inner join species
 			on patient.species_id=species.id
 			inner join client
 			on patient.client_id=client.id
 			where patient.id=$id";
+
 			$result = $db->query($query);
 			
-			$patient = $result->fetch_assoc();		
+			$patient = $result->fetch_assoc();	
+
+			//--------------------------------
+
+			$query = "select * FROM species";
+
+			$result = $db->query($query);
+
+			$species = $result->fetch_all(MYSQLI_ASSOC);
+
 		endif;
 		if ($patient == NULL):
 			// No patient found

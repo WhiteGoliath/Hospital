@@ -16,7 +16,21 @@
 		</div>
 		<div>
 			<label for="name">Species:</label>
-			<input type="text" id="species" name="species" value="<?=$patient['species']?>">
+
+				<select>
+				<option selected=true></option>
+			<?php 
+			foreach ($species as $specie) {
+			?>
+
+					<option value="<?=$specie['id']?>"><?=$specie['species']?></option>
+
+			<?php 
+			}
+			?>
+			
+				</select>
+
 		</div>
 		<div>
 			<label for="name">Beschrijving:</label>
